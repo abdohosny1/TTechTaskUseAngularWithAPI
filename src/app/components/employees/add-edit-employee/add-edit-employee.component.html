@@ -1,0 +1,26 @@
+<div class="modal-content styleform">
+    <p *ngIf="employee.Id === 0">Add New Employee</p>
+    <p *ngIf="!(employee.Id ===0)">Edit Employee</p>
+
+    <div class="form-group">
+
+        <input [(ngModel)]="employee.Name" type="text" class="form-control" placeholder="Employee Name">
+    </div>
+    &nbsp;
+    <div class="form-group">
+
+        <input [(ngModel)]="employee.Age" type="number" class="form-control" placeholder="Employee Age">
+    </div>
+    &nbsp;
+    <div class="form-group">
+
+        <input [(ngModel)]="employee.City" type="text" class="form-control" placeholder="Employee City">
+    </div>
+    &nbsp;
+    <button class="btn btn-primary" *ngIf="employee.Id=== 0" (click)="onAddEmployee()"> Add</button>
+    &nbsp; <button class="btn btn-primary" *ngIf="!(employee.Id=== 0)" (click)="onEditEmployee()"> Edit</button>
+    &nbsp; <button class="btn btn-danger"  (click)="bsModel.hide()">Cancle</button>
+
+
+
+</div>

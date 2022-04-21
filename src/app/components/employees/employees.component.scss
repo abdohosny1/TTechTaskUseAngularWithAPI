@@ -1,0 +1,26 @@
+.tablestyle{
+    margin-top: 4rem;
+}
+
+a{
+    margin-left: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(146, 141, 133);
+    text-decoration: underline;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button{
+    background-image: linear-gradient(to left,transparent,rgb(178, 203, 241));
+}
+button:hover{
+    background-image: linear-gradient(to left,rgb(178, 203, 241),transparent);
+    font: 16 bold;
+
+
+}

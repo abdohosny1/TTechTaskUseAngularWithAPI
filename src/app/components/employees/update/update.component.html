@@ -1,0 +1,25 @@
+<div class="container mt-5">
+    <!-- <form class="mt-5" method="post"> -->
+        <div class="form-group">
+            <label>Name</label>
+
+            <input [(ngModel)]="employee.name" type="text" class="form-control" placeholder="Employee Name">
+        </div>
+        &nbsp;
+        <div class="form-group">
+            <label>Age</label>
+
+            <input [(ngModel)]="employee.age" type="number" class="form-control" placeholder="Employee Age">
+        </div>
+        &nbsp;
+        <div class="form-group">
+              <label>City</label>
+            <input [(ngModel)]="employee.city" type="text" class="form-control" placeholder="Employee City">
+        </div>
+        &nbsp;
+        <div class="mt-5">
+            <input type="submit" (click)="onUpdateEmployee(employee.id,employee)" value="Update" class="btn btn-danger" /> |
+        <input type="button" (click)="BackToEmployee()" value="Back TO List" class="btn btn-info" /> 
+        </div>
+    <!-- </form> -->
+</div>
